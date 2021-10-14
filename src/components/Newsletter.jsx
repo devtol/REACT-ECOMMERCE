@@ -28,8 +28,15 @@ const InputContainer = styled.div`
 `
 const Input = styled.input`
     border: none;
+    flex: 8;
+    padding-left: 20px;
 `
-const Button = styled.button``
+const Button = styled.button`
+    flex: 1;
+    border: none;
+    background-color: teal;
+    color: white;
+`
 
 const Newsletter = () => {
     return (
