@@ -1,8 +1,10 @@
 import { Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter } from '@mui/icons-material'
 import styled from 'styled-components'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
     display: flex;
+    ${mobile({flexDirection: "column"})};
 `
 const Left = styled.div`
     flex: 1;
@@ -31,6 +33,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({display: "none"})};
 `
 const Title = styled.h3`
     margin-bottom: 30px;
@@ -49,6 +52,7 @@ const ListItem = styled.li`
 const Right = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({backgroundColor: "#fff8f8"})};
 `
 
 const ContactItem = styled.div`
@@ -65,7 +69,7 @@ const Footer = () => {
         <Left>
             <Logo>Devtol.</Logo>
             <Desc>
-                asdfasdfsadfasd
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </Desc>
             <SocialContainer>
                 <SocialIcon color="3b5999">

@@ -1,5 +1,6 @@
 import { Send } from '@mui/icons-material'
 import styled from 'styled-components'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
     height: 60vh;
@@ -17,6 +18,7 @@ const Title = styled.h1`
 const Desc = styled.div`
     font-size: 24px;
     font-weight: 300px;
+    ${mobile({textAlign: "center"})};
 `
 const InputContainer = styled.div`
     width: 50%;
@@ -25,6 +27,7 @@ const InputContainer = styled.div`
     display: flex;
     justify-content: space-between;
     border: 1px solid lightgray;
+    ${mobile({width: "80%"})};
 `
 const Input = styled.input`
     border: none;
@@ -42,7 +45,7 @@ const Newsletter = () => {
     return (
         <Container>
             <Title>Newsletter</Title>
-            <Desc>asdfasdfasdfsadf</Desc>
+            <Desc>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Desc>
             <InputContainer>
                 <Input placeholder="Your email"/>
                 <Button>
